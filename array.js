@@ -20,8 +20,6 @@ console.log("Unshift effect : ", arrayNumbers)
 console.log("index of element (100) : " + arrayNumbers.indexOf(100))
 console.log("Is element in array : (11) ", arrayNumbers.includes(11))
 
-
-
 let myNumbers = [11, 22, 33, 44, 55]
 console.log("Main array : ", myNumbers)
 let sum = 0;
@@ -33,3 +31,41 @@ for (let index = 0; index < myNumbers.length; index++) {
 }
 console.log("Sum : " + sum);
 
+// reduce method takes two argument
+let totalSum = myNumbers.reduce((total, eachValue) => total + eachValue, 0);
+console.log("Sum of Array Elements : " + totalSum);
+
+// ex : find even numbers in any array.
+let myArray = [11, 12, 13, 14, 15, 16];
+let evenArray = [];
+console.log("MyArray : ", myArray)
+for (let i = 0; i < myArray.length; i++) {
+    if (myArray[i] % 2 == 0) {
+        evenArray.push(myArray[i]);
+    }
+}
+console.log("EvenArray : ", evenArray)
+
+// filter method
+let evenArr = myArray.filter(number => number % 2 == 0);
+console.log("Filter Method :", evenArr);
+
+// map method
+// [11, 12, 13, 14, 15, 16] => [12,14,16] => [24,28,32]
+let mapArr = evenArr.map(eachValue => eachValue * 2);
+console.log("Map Method : ", mapArr);
+
+
+let array = [1, 2, 3, 4, 5, 6, 7];
+// find even numbers and multiply 2 (you can use methods together)
+console.log("Array : ", array);
+let filteredMappedArr = array.filter(item => item % 2 == 0).map(item => item * 2);
+console.log("2 Methods : ", filteredMappedArr);
+
+// ex : find even numbers and multiply 3 and sum them
+let array2 = [1, 2, 3, 4, 5, 6, 7];
+console.log("Orijinal Array : ", array2);
+let lastArr = array2.filter(item => item % 2 == 0)  // [2,4,6]
+    .map(item => item * 3)                          // [6,12,18]
+    .reduce((sum, value) => sum + value, 0);        // 6+12+18 = 36
+console.log("Result : ", lastArr);
