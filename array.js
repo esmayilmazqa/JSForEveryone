@@ -69,3 +69,29 @@ let lastArr = array2.filter(item => item % 2 == 0)  // [2,4,6]
     .map(item => item * 3)                          // [6,12,18]
     .reduce((sum, value) => sum + value, 0);        // 6+12+18 = 36
 console.log("Result : ", lastArr);
+
+// sorting
+// string
+let fruits = ["mango", "banana", "strawberry", "apple"];
+console.log("Fruits : ", fruits);
+fruits.sort();
+console.log("Sorted : ", fruits);
+
+// numbers 
+// ex 1 :
+let nSortednumbers = [9,1,4,2,8]
+console.log("Original array : ", nSortednumbers);
+console.log("SortedArray : ", nSortednumbers.sort());
+
+// custom logic with arrow function
+var nsNumbers = [9,1,4,2,8,3]
+console.log("Array : ", nsNumbers);
+nsNumbers.sort((a,b) => a-b );
+console.log("Sorted on custom logic with arrow fn : ", nsNumbers);
+
+// custom logic with anonymous function
+var nsNumbers = [9,1,4,2,8,3]
+nsNumbers.sort(function(a,b){
+    return a-b;
+})
+console.log("Sorted on custom logic with annonymous fn : ", nsNumbers);
