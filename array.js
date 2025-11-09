@@ -108,7 +108,8 @@ var nsNumbers = [9,1,4,2,8,3];
 console.log("Array : ", nsNumbers);
 console.log("Reverse :" ,nsNumbers.reverse());
 // sort and reverse
-console.log("Custom Reverse : ", nsNumbers.sort((a,b)=> a-b)); 
+console.log("Custom Reverse (Descending) : ", nsNumbers.sort((a,b)=> b-a)); 
+console.log("Custom Reverse (Ascending): ", nsNumbers.sort((a,b)=> a-b)); 
 
 
 
