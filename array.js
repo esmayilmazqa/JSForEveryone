@@ -95,3 +95,20 @@ nsNumbers.sort(function(a,b){
     return a-b;
 })
 console.log("Sorted on custom logic with annonymous fn : ", nsNumbers);
+
+// reverse of array
+// string
+let fruits2 = ["mango", "banana", "strawberry", "apple"];;
+console.log("Fruits array : ", fruits2);
+fruits2.reverse(); 
+console.log("Reverse fruits : ", fruits2);
+console.log("Sorted fruits : ", fruits2.sort());
+// numbers
+var nsNumbers = [9,1,4,2,8,3];
+console.log("Array : ", nsNumbers);
+console.log("Reverse :" ,nsNumbers.reverse());
+// sort and reverse
+console.log("Custom Reverse : ", nsNumbers.sort((a,b)=> a-b)); 
+
+
+
