@@ -33,3 +33,14 @@ Scope from Global :  Global
 Scope from Function :  Local
 Scope from Global :  Global
  */
+
+console.log("****************************")
+
+var globalVrb = "Hi";
+
+if(true)
+{
+    var globalVrb = "Hello";
+}
+
+console.log("Block and Global are same : ", globalVrb); // Hello

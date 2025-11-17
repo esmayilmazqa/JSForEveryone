@@ -1,4 +1,4 @@
-public class VarKeyword {
+public class scopeKontrol {
 
     static String greeting = "Hi";
     static String scopeControl = "Global";
