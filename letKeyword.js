@@ -8,7 +8,7 @@ console.log(value);
 
 if (true) {
     // global value varible cannot accesible is here
-    //console.log("which value is here? : "+ value); // Cannot access 'value' before initialization
+    console.log("which value is here? : "+ value); // Cannot access 'value' before initialization
     let value = "local variable";
     console.log(value);
 
