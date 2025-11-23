@@ -16,11 +16,12 @@ module.exports = class Person {
         console.log(this.firstName + this.lastName);
     }
 }
-
+/* executed for class :
 let person = new Person("John", "Doe");
 console.log("age : " + person.age);
 console.log("Location : ", person.location);
 person.fullName();
+*/
 
 /**
  let person = {
