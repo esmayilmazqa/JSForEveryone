@@ -31,3 +31,25 @@ for(let key in person)
 {
     console.log(person[key]); // Jane \nDoe
 }
+
+/** functions in property of object */
+let person2 = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 23,
+    fullName: function () {
+        console.log(this.firstName + this.lastName)
+    }
+}
+/** or by using arrow function
+let person = {
+    firstName: "Jane",
+    lastName: "Lock",
+    age: 23,
+    fullName: ()=> {
+        console.log(this.firstName + this.lastName)
+    }
+}
+*/
+
+person.fullName();
