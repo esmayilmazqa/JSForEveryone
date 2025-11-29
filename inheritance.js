@@ -7,7 +7,7 @@ class African extends Person{
         super(firstName, lastName);
     }
 
-    get Location(){
+    get location(){
         return "Africa";
     }
 
